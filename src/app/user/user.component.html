@@ -1,1 +1,62 @@
-<h4>用户列表</h4>
+<div class="userbox">
+    <h3>用户管理</h3>
+    <form class="form-horizontal">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="box-body">
+                    <div class="fields-group">
+                        <label class="col-lg-1 col-md-2 control-label"> 用戶名稱</label>
+                        <div class="col-lg-2 col-md-4">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-pencil"></i>
+                                </div>            
+                                <input type="text" class="form-control" placeholder="用戶名稱"  name="userName" value="">
+                            </div>    
+                        </div>
+                        <div class="col-lg-3 col-md-3">
+                            <div class="btn-group pull-left">
+                                <button class="btn btn-primary submit btn-sm" ><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</button>
+                            </div>
+                            <div class="btn-group pull-left" style="margin-left: 10px;">
+                                <a href="javascript:;" class="btn btn-default btn-sm">
+                                    <i class="fa fa-undo"></i>
+                                    &nbsp;&nbsp;重置
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="btn-group pull-right" style="margin-right: 20px">
+                    <a data-toggle="modal" data-target="#myModal" class="btn btn-success" >
+                        <i class="fa fa-save"></i>
+                        <span>新增</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </form>
+    <nz-table #basicTable [nzData]="listOfData">
+        <thead>
+            <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of basicTable.data">
+            <td>{{ data.name }}</td>
+            <td>{{ data.age }}</td>
+            <td>{{ data.address }}</td>
+            <td>
+                <a>Action 一 {{ data.name }}</a> |
+                <a>Delete</a>
+            </td>
+            </tr>
+        </tbody>
+    </nz-table>
+</div>

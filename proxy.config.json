@@ -1,0 +1,10 @@
+{
+    "/api": {
+        "target": "https://1680660.com",
+        "secure":false,
+        "changeOrigin":true,
+        "pathRewrite":{
+        "^/api":""
+        }
+    }
+}
