@@ -29,24 +29,28 @@ import { MailOutline ,AppstoreOutline,SettingOutline,TeamOutline} from '@ant-des
 const icons: IconDefinition[] = [ MailOutline ,AppstoreOutline,SettingOutline,TeamOutline ];
 //封装后的Storage
 import { StroageService } from './service/stroage';
-
+// 自定义组件
+import { Pagination } from './component/pagination.component';
 import { HeadComponent } from './head/head.component';
 import { MenuComponent } from './menu/menu.component';
 import { UserComponent } from './user/user.component';
 import { ShopComponent } from './shop/shop.component';
 import { LoginComponent } from './login/login.component';
 import { ConsoleComponent } from './console/console.component';
+import { AddcardComponent } from './addcard/addcard.component';
 
 @NgModule({
   // 声明组件
   declarations: [
     AppComponent,
+    Pagination,
     HeadComponent,
     MenuComponent,
     UserComponent,
     ShopComponent,
     LoginComponent,
-    ConsoleComponent
+    ConsoleComponent,
+    AddcardComponent
   ],
   imports: [
     BrowserModule,

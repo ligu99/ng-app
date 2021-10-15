@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { ConsoleComponent } from './console/console.component';
 import { UserComponent } from "../app/user/user.component"
 import { ShopComponent } from "../app/shop/shop.component"
+import { AddcardComponent } from "../app/addcard/addcard.component"
 
 const routes: Routes = [
   // 重定向
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: '', component: ConsoleComponent,children:[
     { path: 'user', component: UserComponent },
     { path: 'shop', component: ShopComponent },
+    { path: 'addcard', component: AddcardComponent },
   ]}
 ];
 

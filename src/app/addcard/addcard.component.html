@@ -1,0 +1,61 @@
+<div class="addcard">
+    <h4>集點卡設置 – 新增編輯</h4>
+    <div class="mb-10 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label"><em>*&nbsp;</em>集點卡店家：</label>
+        <div class="input-group col-sm-3">
+            <input type="text" class="form-control" aria-label="..." readonly>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default">請選擇</button>
+            </div>
+          </div>
+    </div>
+    <div class="mb-10 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label"><em>*&nbsp;</em>图片：</label>
+        <div class="input-group col-sm-3">
+            <input type="text" class="form-control" aria-label="..." readonly>
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default"> <i class="glyphicon glyphicon-folder-open"></i>&nbsp;瀏覽</button>
+            </div>
+          </div>
+    </div>
+    <div class="mb-10 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label"><em>*&nbsp;</em>value：</label>
+        <div class="input-group col-sm-6">
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" [(ngModel)]="type"> 1
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" [(ngModel)]="type"> 2
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" [(ngModel)]="type"> 3
+            </label>
+        </div>
+    </div>
+    <div class="mb-10 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label"><em>*&nbsp;</em>文本域：</label>
+        <div class="input-group col-sm-4">
+            <textarea class="form-control" rows="3"></textarea>
+        </div>
+    </div>
+    <div class="mb-10 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label"><em>*&nbsp;</em>数字输入：</label>
+        <div class="input-group col-sm-4">
+            <input class="form-control" type="number" oninput="if(value>=99)value=99;if(value!=''&&value<=0)value=0;value=value.replace(/[^\d]|^[0]/g,'')" > 
+        </div>
+    </div>
+    <div class="mb-10 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label"><em>*&nbsp;</em>多选：</label>
+        <div class="input-group col-sm-10">
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+            </label>
+            <label class="checkbox-inline">
+              <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+            </label>
+        </div>
+    </div>
+</div>
